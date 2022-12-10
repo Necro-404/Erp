@@ -283,6 +283,7 @@ class Ui_main_window(object):
 
         self.txt_senha = QLineEdit(self.page_cadastro)
         self.txt_senha.setObjectName(u"txt_senha")
+        self.txt_senha.setEchoMode(QLineEdit.Password)
 
         self.horizontalLayout_7.addWidget(self.txt_senha)
 
@@ -298,6 +299,7 @@ class Ui_main_window(object):
 
         self.txt_senha2 = QLineEdit(self.page_cadastro)
         self.txt_senha2.setObjectName(u"txt_senha2")
+        self.txt_senha2.setEchoMode(QLineEdit.Password)
 
         self.horizontalLayout_6.addWidget(self.txt_senha2)
 
@@ -382,7 +384,7 @@ class Ui_main_window(object):
 
         self.retranslateUi(main_window)
 
-        self.Pages.setCurrentIndex(0)
+        self.Pages.setCurrentIndex(2)
         self.tabWidget.setCurrentIndex(0)
 
 
