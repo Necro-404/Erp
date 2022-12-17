@@ -17,7 +17,7 @@ class Ui_Login(object):
     def setupUi(self, Login):
         if not Login.objectName():
             Login.setObjectName(u"Login")
-        Login.resize(927, 846)
+        Login.resize(824, 623)
         sizePolicy = QSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -29,8 +29,8 @@ class Ui_Login(object):
         Login.setLayoutDirection(Qt.LeftToRight)
         Login.setAutoFillBackground(False)
         Login.setStyleSheet(u"background-color: rgb(115, 143, 167);")
-        self.verticalLayout_3 = QVBoxLayout(Login)
-        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.verticalLayout_4 = QVBoxLayout(Login)
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
         self.frame = QFrame(Login)
         self.frame.setObjectName(u"frame")
         sizePolicy1 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Maximum)
@@ -48,7 +48,6 @@ class Ui_Login(object):
         self.frame.setFrameShadow(QFrame.Raised)
         self.verticalLayout_2 = QVBoxLayout(self.frame)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
-        self.verticalLayout_2.setContentsMargins(20, 20, 20, 20)
         self.horizontalLayout = QHBoxLayout()
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.label = QLabel(self.frame)
@@ -56,12 +55,10 @@ class Ui_Login(object):
 
         self.horizontalLayout.addWidget(self.label)
 
-        self.icon = QLabel(self.frame)
-        self.icon.setObjectName(u"icon")
-        self.icon.setPixmap(QPixmap(u"../../Downloads/user-interface.png"))
-        self.icon.setScaledContents(True)
+        self.label_5 = QLabel(self.frame)
+        self.label_5.setObjectName(u"label_5")
 
-        self.horizontalLayout.addWidget(self.icon)
+        self.horizontalLayout.addWidget(self.label_5)
 
         self.label_2 = QLabel(self.frame)
         self.label_2.setObjectName(u"label_2")
@@ -71,11 +68,20 @@ class Ui_Login(object):
 
         self.verticalLayout_2.addLayout(self.horizontalLayout)
 
+        self.verticalLayout = QVBoxLayout()
+        self.verticalLayout.setObjectName(u"verticalLayout")
         self.horizontalLayout_3 = QHBoxLayout()
-        self.horizontalLayout_3.setSpacing(16)
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
-        self.horizontalLayout_3.setSizeConstraint(QLayout.SetDefaultConstraint)
-        self.horizontalLayout_3.setContentsMargins(-1, 15, 0, 15)
+        self.label_7 = QLabel(self.frame)
+        self.label_7.setObjectName(u"label_7")
+        self.label_7.setMaximumSize(QSize(200, 16777215))
+
+        self.horizontalLayout_3.addWidget(self.label_7)
+
+        self.verticalLayout_3 = QVBoxLayout()
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.verticalLayout_3.setSizeConstraint(QLayout.SetDefaultConstraint)
+        self.verticalLayout_3.setContentsMargins(-1, 15, 0, 15)
         self.txt_user = QLineEdit(self.frame)
         self.txt_user.setObjectName(u"txt_user")
         sizePolicy2 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Fixed)
@@ -92,8 +98,9 @@ class Ui_Login(object):
         self.txt_user.setAcceptDrops(True)
         self.txt_user.setLayoutDirection(Qt.LeftToRight)
         self.txt_user.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        self.txt_user.setAlignment(Qt.AlignCenter)
 
-        self.horizontalLayout_3.addWidget(self.txt_user)
+        self.verticalLayout_3.addWidget(self.txt_user)
 
         self.txt_pass = QLineEdit(self.frame)
         self.txt_pass.setObjectName(u"txt_pass")
@@ -102,13 +109,24 @@ class Ui_Login(object):
         self.txt_pass.setMinimumSize(QSize(0, 30))
         self.txt_pass.setMaximumSize(QSize(600, 16777215))
         self.txt_pass.setFont(font2)
+        self.txt_pass.setLayoutDirection(Qt.LeftToRight)
         self.txt_pass.setStyleSheet(u"background-color: rgb(255, 255, 255);")
         self.txt_pass.setEchoMode(QLineEdit.Password)
+        self.txt_pass.setAlignment(Qt.AlignCenter)
 
-        self.horizontalLayout_3.addWidget(self.txt_pass)
+        self.verticalLayout_3.addWidget(self.txt_pass)
 
 
-        self.verticalLayout_2.addLayout(self.horizontalLayout_3)
+        self.horizontalLayout_3.addLayout(self.verticalLayout_3)
+
+        self.label_6 = QLabel(self.frame)
+        self.label_6.setObjectName(u"label_6")
+        self.label_6.setMaximumSize(QSize(200, 16777215))
+
+        self.horizontalLayout_3.addWidget(self.label_6)
+
+
+        self.verticalLayout.addLayout(self.horizontalLayout_3)
 
         self.horizontalLayout_2 = QHBoxLayout()
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
@@ -147,10 +165,13 @@ class Ui_Login(object):
         self.horizontalLayout_2.addWidget(self.label_3)
 
 
-        self.verticalLayout_2.addLayout(self.horizontalLayout_2)
+        self.verticalLayout.addLayout(self.horizontalLayout_2)
 
 
-        self.verticalLayout_3.addWidget(self.frame)
+        self.verticalLayout_2.addLayout(self.verticalLayout)
+
+
+        self.verticalLayout_4.addWidget(self.frame)
 
 
         self.retranslateUi(Login)
@@ -161,12 +182,14 @@ class Ui_Login(object):
     def retranslateUi(self, Login):
         Login.setWindowTitle(QCoreApplication.translate("Login", u"Form", None))
         self.label.setText("")
-        self.icon.setText("")
+        self.label_5.setText(QCoreApplication.translate("Login", u"<html><head/><body><p><img src=\"file:///C:/Users/USER/Pictures/Frame 81.png\"/></p></body></html>", None))
         self.label_2.setText("")
+        self.label_7.setText("")
         self.txt_user.setText("")
         self.txt_user.setPlaceholderText(QCoreApplication.translate("Login", u"USER", None))
         self.txt_pass.setText("")
         self.txt_pass.setPlaceholderText(QCoreApplication.translate("Login", u"PASSWORD", None))
+        self.label_6.setText("")
         self.label_4.setText("")
         self.btn_login.setText(QCoreApplication.translate("Login", u"Login", None))
         self.label_3.setText("")

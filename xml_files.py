@@ -40,8 +40,8 @@ class Read_xml():
 
     #dados do emitente
     chave = self.check_none(root.find("./ns:protNFe/ns:infProt/ns:chNFe", nsNFe))
-    cnpj_emitente = self.check_none(root.find("./ns:protNFe/ns:infProt/ns:CNPJ", nsNFe))
-    nome_emitente = self.check_none(root.find("./ns:protNFe/ns:infProt/ns:xNome", nsNFe))
+    cnpj_emitente = self.check_none(root.find("./ns:NFe/ns:infNFe/ns:emit/ns:CNPJ", nsNFe))
+    nome_emitente = self.check_none(root.find("./ns:NFe/ns:infNFe/ns:emit/ns:xNome", nsNFe))
 
     cnpj_emitente = self.format_cnpj(cnpj_emitente)
 
