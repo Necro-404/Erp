@@ -354,13 +354,25 @@ class Ui_main_window(object):
         self.verticalLayout_5.setObjectName(u"verticalLayout_5")
         self.label_4 = QLabel(self.tab)
         self.label_4.setObjectName(u"label_4")
+        self.label_4.setStyleSheet(u"color: rgb(255,255,255);\n"
+"font-family: 'Montserrat';\n"
+"font-size: 25px;\n"
+"text-align: center; \n"
+"")
 
         self.verticalLayout_5.addWidget(self.label_4)
 
         self.tw_estoque = QTreeWidget(self.tab)
         self.tw_estoque.setObjectName(u"tw_estoque")
-        self.tw_estoque.setStyleSheet(u"Color: rgb(0, 0, 0);\n"
-"font-size: 20px;")
+        self.tw_estoque.setStyleSheet(u"border: 3px solid rgb(255, 255, 255);\n"
+"color: rgb(0,0,0);\n"
+"font-family: 'Montserrat';\n"
+"font-size: 20px;\n"
+"text-align: center;\n"
+"background-color:rgb(59, 126, 182)\n"
+"")
+        self.tw_estoque.setFrameShape(QFrame.NoFrame)
+        self.tw_estoque.setFrameShadow(QFrame.Sunken)
 
         self.verticalLayout_5.addWidget(self.tw_estoque)
 
@@ -371,13 +383,24 @@ class Ui_main_window(object):
         self.verticalLayout_4.setObjectName(u"verticalLayout_4")
         self.label_3 = QLabel(self.tab)
         self.label_3.setObjectName(u"label_3")
+        self.label_3.setStyleSheet(u"\n"
+"color: rgb(255,255,255);\n"
+"font-family: 'Montserrat';\n"
+"font-size: 25px;\n"
+"text-align: center; \n"
+"")
 
         self.verticalLayout_4.addWidget(self.label_3)
 
         self.tw_saida = QTreeWidget(self.tab)
         self.tw_saida.setObjectName(u"tw_saida")
-        self.tw_saida.setStyleSheet(u"Color: rgb(0, 0, 0);\n"
-"font-size: 20px;")
+        self.tw_saida.setStyleSheet(u"border: 3px solid rgb(255, 255, 255);\n"
+"color: rgb(0,0,0);\n"
+"font-family: 'Montserrat';\n"
+"font-size: 20px;\n"
+"text-align: center;\n"
+"background-color:rgb(59, 126, 182)\n"
+"")
 
         self.verticalLayout_4.addWidget(self.tw_saida)
 
@@ -475,6 +498,13 @@ class Ui_main_window(object):
         self.lineedit_estoque = QLineEdit(self.estoque)
         self.lineedit_estoque.setObjectName(u"lineedit_estoque")
         self.lineedit_estoque.setMinimumSize(QSize(0, 35))
+        self.lineedit_estoque.setStyleSheet(u"border: 3px solid rgb(255, 255, 255);\n"
+"color: rgb(255,255,255);\n"
+"border-radius: 20px 20px 0px 0px;\n"
+"font-family: 'Montserrat';\n"
+"font-size: 25px;\n"
+"text-align: center;\n"
+"")
 
         self.verticalLayout_13.addWidget(self.lineedit_estoque)
 
@@ -527,6 +557,7 @@ class Ui_main_window(object):
 
         self.tableView_estoque = QTableView(self.estoque)
         self.tableView_estoque.setObjectName(u"tableView_estoque")
+        self.tableView_estoque.setStyleSheet(u"")
 
         self.verticalLayout_13.addWidget(self.tableView_estoque)
 
@@ -754,8 +785,8 @@ class Ui_main_window(object):
 
         self.retranslateUi(main_window)
 
-        self.Pages.setCurrentIndex(5)
-        self.tabWidget.setCurrentIndex(1)
+        self.Pages.setCurrentIndex(1)
+        self.tabWidget.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(main_window)
@@ -801,14 +832,15 @@ class Ui_main_window(object):
         ___qtreewidgetitem.setText(0, QCoreApplication.translate("main_window", u"NFe", None));
         self.label_3.setText(QCoreApplication.translate("main_window", u"sa\u00edda", None))
         ___qtreewidgetitem1 = self.tw_saida.headerItem()
-        ___qtreewidgetitem1.setText(3, QCoreApplication.translate("main_window", u"Usuario_Acao", None));
-        ___qtreewidgetitem1.setText(2, QCoreApplication.translate("main_window", u"Quantidade_Produto", None));
-        ___qtreewidgetitem1.setText(1, QCoreApplication.translate("main_window", u"Unidade_Medida", None));
-        ___qtreewidgetitem1.setText(0, QCoreApplication.translate("main_window", u"Descricao_Produto", None));
+        ___qtreewidgetitem1.setText(4, QCoreApplication.translate("main_window", u"Usuario_Acao", None));
+        ___qtreewidgetitem1.setText(3, QCoreApplication.translate("main_window", u"Quantidade_Produto", None));
+        ___qtreewidgetitem1.setText(2, QCoreApplication.translate("main_window", u"Unidade_Medida", None));
+        ___qtreewidgetitem1.setText(1, QCoreApplication.translate("main_window", u"Descricao_Produto", None));
+        ___qtreewidgetitem1.setText(0, QCoreApplication.translate("main_window", u"NFe", None));
         self.btn_entrada.setText(QCoreApplication.translate("main_window", u"Entrada Produto", None))
         self.btn_saida.setText(QCoreApplication.translate("main_window", u"Sa\u00edda Produto", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), QCoreApplication.translate("main_window", u"base", None))
-        self.label_22.setText(QCoreApplication.translate("main_window", u"<html><head/><body><p align=\"center\"><span style=\" font-size:36pt; font-weight:600; color:#ffffff;\">IMPORTAR XML</span></p></body></html>", None))
+        self.label_22.setText(QCoreApplication.translate("main_window", u"<html><head/><body><p align=\"center\"><span style=\" font-size:36pt; font-weight:600; color:#ffffff;\">ESTOQUE COMPLETO</span></p></body></html>", None))
         self.btn_gerar_grafico.setText(QCoreApplication.translate("main_window", u"Gerar Gr\u00e1fico", None))
         self.btn_gerar_excel.setText(QCoreApplication.translate("main_window", u"Gerar Excel", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.estoque), QCoreApplication.translate("main_window", u"estoque", None))

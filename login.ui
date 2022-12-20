@@ -31,7 +31,8 @@
    <bool>false</bool>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(115, 143, 167);</string>
+   <string notr="true">background-color:rgb(30, 65, 94);
+</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_4">
    <item>
@@ -144,7 +145,8 @@
               </property>
               <property name="font">
                <font>
-                <pointsize>11</pointsize>
+                <family>Montserrat</family>
+                <pointsize>-1</pointsize>
                </font>
               </property>
               <property name="contextMenuPolicy">
@@ -157,7 +159,13 @@
                <enum>Qt::LeftToRight</enum>
               </property>
               <property name="styleSheet">
-               <string notr="true">background-color: rgb(255, 255, 255);</string>
+               <string notr="true">border: 3px solid rgb(255, 255, 255);
+color: rgb(255,255,255);
+border-radius: 20px 20px 0px 0px;
+font-family: 'Montserrat';
+font-size: 25px;
+text-align: center;
+</string>
               </property>
               <property name="text">
                <string/>
@@ -192,14 +200,21 @@
               </property>
               <property name="font">
                <font>
-                <pointsize>11</pointsize>
+                <family>Montserrat</family>
+                <pointsize>-1</pointsize>
                </font>
               </property>
               <property name="layoutDirection">
                <enum>Qt::LeftToRight</enum>
               </property>
               <property name="styleSheet">
-               <string notr="true">background-color: rgb(255, 255, 255);</string>
+               <string notr="true">border: 3px solid rgb(255, 255, 255);
+color: rgb(255,255,255);
+border-radius: 20px 20px 0px 0px;
+font-family: 'Montserrat';
+font-size: 25px;
+text-align: center;
+</string>
               </property>
               <property name="text">
                <string/>
@@ -263,8 +278,9 @@
             </property>
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <weight>75</weight>
+              <family>Source Sans Pro Semibold</family>
+              <pointsize>-1</pointsize>
+              <weight>99</weight>
               <bold>true</bold>
              </font>
             </property>
@@ -276,13 +292,18 @@
             </property>
             <property name="styleSheet">
              <string notr="true">QPushButton{
-	background-color: rgb(12, 65, 96);
-	color: rgb(255,255,255);
-	border-radius: 20px
+	background-color: #FFd343;
+	font-weight: 800;
+	font-size: 25px;
+	text-align: center;
+	border: 2px solid #000000;
+	border-radius: 10px;
+	font-family: &quot;Source Sans Pro Semibold&quot;;
+	color: rgb(0, 0, 0);
 }
 QPushButton:hover{
-	background-color: rgb(195, 206, 218);
-	color: rgb(7, 19, 48);
+	background-color: rgb(255, 233, 160);
+	color: rgb(0, 0, 0);
 }</string>
             </property>
             <property name="text">

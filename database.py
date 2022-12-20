@@ -122,6 +122,29 @@ class DataBase():
 
       """)
 
+  def update_estoque(self, data_saida, user, notas):
+    try:
+      cursor = self.connection.cursor()
+      for nota in notas:
+        cursor.execute(f"UPDATE notas SET data_saida = '{data_saida}', usuario = '{user}' WHERE NFe = '{nota}'")
+        self.connection.commit()
+    except:
+      raise ValueError("Erro ao conectar no banco")
+  
+  def update_estorno(self, notas):
+
+        try:
+            cursor = self.connection.cursor()
+
+            for nota in notas:
+                cursor.execute(f"UPDATE notas SET data_saida = '', usuario = '' WHERE NFe = '{nota}'"                               )
+
+                self.connection.commit()
+
+        except AttributeError:
+            print('faça a conexão para alterar campos.')
+
+
 if __name__ == "__main__":
   db = DataBase()
   db.conecta()

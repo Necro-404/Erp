@@ -28,7 +28,8 @@ class Ui_Login(object):
         Login.setFont(font)
         Login.setLayoutDirection(Qt.LeftToRight)
         Login.setAutoFillBackground(False)
-        Login.setStyleSheet(u"background-color: rgb(115, 143, 167);")
+        Login.setStyleSheet(u"background-color:rgb(30, 65, 94);\n"
+"")
         self.verticalLayout_4 = QVBoxLayout(Login)
         self.verticalLayout_4.setObjectName(u"verticalLayout_4")
         self.frame = QFrame(Login)
@@ -92,12 +93,18 @@ class Ui_Login(object):
         self.txt_user.setMinimumSize(QSize(0, 30))
         self.txt_user.setMaximumSize(QSize(600, 16777215))
         font2 = QFont()
-        font2.setPointSize(11)
+        font2.setFamily(u"Montserrat")
         self.txt_user.setFont(font2)
         self.txt_user.setContextMenuPolicy(Qt.NoContextMenu)
         self.txt_user.setAcceptDrops(True)
         self.txt_user.setLayoutDirection(Qt.LeftToRight)
-        self.txt_user.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        self.txt_user.setStyleSheet(u"border: 3px solid rgb(255, 255, 255);\n"
+"color: rgb(255,255,255);\n"
+"border-radius: 20px 20px 0px 0px;\n"
+"font-family: 'Montserrat';\n"
+"font-size: 25px;\n"
+"text-align: center;\n"
+"")
         self.txt_user.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout_3.addWidget(self.txt_user)
@@ -110,7 +117,13 @@ class Ui_Login(object):
         self.txt_pass.setMaximumSize(QSize(600, 16777215))
         self.txt_pass.setFont(font2)
         self.txt_pass.setLayoutDirection(Qt.LeftToRight)
-        self.txt_pass.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        self.txt_pass.setStyleSheet(u"border: 3px solid rgb(255, 255, 255);\n"
+"color: rgb(255,255,255);\n"
+"border-radius: 20px 20px 0px 0px;\n"
+"font-family: 'Montserrat';\n"
+"font-size: 25px;\n"
+"text-align: center;\n"
+"")
         self.txt_pass.setEchoMode(QLineEdit.Password)
         self.txt_pass.setAlignment(Qt.AlignCenter)
 
@@ -141,20 +154,25 @@ class Ui_Login(object):
         self.btn_login.setMinimumSize(QSize(300, 40))
         self.btn_login.setMaximumSize(QSize(396, 16777209))
         font3 = QFont()
-        font3.setPointSize(12)
+        font3.setFamily(u"Source Sans Pro Semibold")
         font3.setBold(True)
-        font3.setWeight(75)
+        font3.setWeight(99)
         self.btn_login.setFont(font3)
         self.btn_login.setCursor(QCursor(Qt.PointingHandCursor))
         self.btn_login.setContextMenuPolicy(Qt.CustomContextMenu)
         self.btn_login.setStyleSheet(u"QPushButton{\n"
-"	background-color: rgb(12, 65, 96);\n"
-"	color: rgb(255,255,255);\n"
-"	border-radius: 20px\n"
+"	background-color: #FFd343;\n"
+"	font-weight: 800;\n"
+"	font-size: 25px;\n"
+"	text-align: center;\n"
+"	border: 2px solid #000000;\n"
+"	border-radius: 10px;\n"
+"	font-family: \"Source Sans Pro Semibold\";\n"
+"	color: rgb(0, 0, 0);\n"
 "}\n"
 "QPushButton:hover{\n"
-"	background-color: rgb(195, 206, 218);\n"
-"	color: rgb(7, 19, 48);\n"
+"	background-color: rgb(255, 233, 160);\n"
+"	color: rgb(0, 0, 0);\n"
 "}")
 
         self.horizontalLayout_2.addWidget(self.btn_login)

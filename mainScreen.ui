@@ -246,7 +246,7 @@ QPushButton:hover{
        <number>1</number>
       </property>
       <property name="currentIndex">
-       <number>5</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="page_import">
        <layout class="QVBoxLayout" name="verticalLayout_16">
@@ -517,7 +517,7 @@ Color: rgb(0, 0, 0);
 font-size: 15px;</string>
           </property>
           <property name="currentIndex">
-           <number>1</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="tab">
            <attribute name="title">
@@ -534,6 +534,13 @@ font-size: 15px;</string>
                    <layout class="QVBoxLayout" name="verticalLayout_5">
                     <item>
                      <widget class="QLabel" name="label_4">
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(255,255,255);
+font-family: 'Montserrat';
+font-size: 25px;
+text-align: center; 
+</string>
+                      </property>
                       <property name="text">
                        <string>Estoque</string>
                       </property>
@@ -542,8 +549,19 @@ font-size: 15px;</string>
                     <item>
                      <widget class="QTreeWidget" name="tw_estoque">
                       <property name="styleSheet">
-                       <string notr="true">Color: rgb(0, 0, 0);
-font-size: 20px;</string>
+                       <string notr="true">border: 3px solid rgb(255, 255, 255);
+color: rgb(0,0,0);
+font-family: 'Montserrat';
+font-size: 20px;
+text-align: center;
+background-color:rgb(59, 126, 182)
+</string>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::NoFrame</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Sunken</enum>
                       </property>
                       <column>
                        <property name="text">
@@ -633,6 +651,14 @@ font-size: 20px;</string>
                    <layout class="QVBoxLayout" name="verticalLayout_4">
                     <item>
                      <widget class="QLabel" name="label_3">
+                      <property name="styleSheet">
+                       <string notr="true">
+color: rgb(255,255,255);
+font-family: 'Montserrat';
+font-size: 25px;
+text-align: center; 
+</string>
+                      </property>
                       <property name="text">
                        <string>saída</string>
                       </property>
@@ -641,9 +667,19 @@ font-size: 20px;</string>
                     <item>
                      <widget class="QTreeWidget" name="tw_saida">
                       <property name="styleSheet">
-                       <string notr="true">Color: rgb(0, 0, 0);
-font-size: 20px;</string>
+                       <string notr="true">border: 3px solid rgb(255, 255, 255);
+color: rgb(0,0,0);
+font-family: 'Montserrat';
+font-size: 20px;
+text-align: center;
+background-color:rgb(59, 126, 182)
+</string>
                       </property>
+                      <column>
+                       <property name="text">
+                        <string>NFe</string>
+                       </property>
+                      </column>
                       <column>
                        <property name="text">
                         <string>Descricao_Produto</string>
@@ -822,7 +858,7 @@ QPushButton:hover{
                </size>
               </property>
               <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600; color:#ffffff;&quot;&gt;IMPORTAR XML&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600; color:#ffffff;&quot;&gt;ESTOQUE COMPLETO&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
              </widget>
             </item>
@@ -833,6 +869,15 @@ QPushButton:hover{
                 <width>0</width>
                 <height>35</height>
                </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border: 3px solid rgb(255, 255, 255);
+color: rgb(255,255,255);
+border-radius: 20px 20px 0px 0px;
+font-family: 'Montserrat';
+font-size: 25px;
+text-align: center;
+</string>
               </property>
              </widget>
             </item>
@@ -905,7 +950,11 @@ QPushButton:hover{
              </layout>
             </item>
             <item>
-             <widget class="QTableView" name="tableView_estoque"/>
+             <widget class="QTableView" name="tableView_estoque">
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+             </widget>
             </item>
            </layout>
           </widget>
