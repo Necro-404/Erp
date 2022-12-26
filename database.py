@@ -30,6 +30,34 @@ class DataBase():
     except:
       print("Faça a conexão com o banco")
 
+  def create_table_clientes(self):
+    try:
+      cursor = self.connection.cursor()
+      cursor.execute("""
+
+        CREATE TABLE IF NOT EXISTS clientes(
+          id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+          name TEXT NOT NULL,
+          cpf INTEGER NOT NULL, 
+          sexo TEXT NOT NULL, 
+          cep INTEGER NOT NULL, 
+          numero_casa INTEGER NOT NULL,
+          logradouro TEXT NOT NULL, 
+          bairro TEXT NOT NULL, 
+          cidade TEXT NOT NULL,
+          estado TEXT NOT NULL,
+          telefone INTEGER, 
+          celular INTEGER, 
+          email TEXT, 
+          cnpj INTEGER, 
+          identidade INTEGER, 
+          orgao_emissor INTEGER,
+        );
+
+      """)
+    except:
+      print("Faça a conexão com o banco")
+
   def insert_user(self, name, user, password, access):
     try:
       cursor = self.connection.cursor()
@@ -37,6 +65,14 @@ class DataBase():
       self.connection.commit()
     except:
       print("Faça a conexão com o banco")
+
+  def insert_cliente(self, name,  cpf, sexo, cep, numero_casa, logradouro, bairro, cidade, estado, telefone='', celular='', email='', cnpj='', identidade='', orgao_emissor=''):
+    try:
+      cursor = self.connection.cursor()
+      cursor.execute("INSERT INTO clientes(name,  cpf, sexo, cep, numero_casa, logradouro, bairro, cidade, estado, telefone, celular, email, cnpj, identidade, orgao_emissor) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", (name, cpf, sexo, cep, numero_casa, logradouro, bairro, cidade, estado, telefone, celular, email, cnpj, identidade, orgao_emissor))
+      self.connection.commit()
+    except:
+      raise TimeoutError
 
   def login_user(self, user, password):
     try:

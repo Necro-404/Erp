@@ -17,7 +17,7 @@ class Ui_main_window(object):
     def setupUi(self, main_window):
         if not main_window.objectName():
             main_window.setObjectName(u"main_window")
-        main_window.resize(1010, 916)
+        main_window.resize(1010, 932)
         main_window.setStyleSheet(u"background-color:rgb(30, 65, 94);\n"
 "")
         self.verticalLayout_11 = QWidget(main_window)
@@ -33,7 +33,6 @@ class Ui_main_window(object):
         self.frame.setFrameShadow(QFrame.Raised)
         self.horizontalLayout = QHBoxLayout(self.frame)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
-        self.horizontalLayout.setContentsMargins(60, 1, 60, 1)
         self.btn_home = QPushButton(self.frame)
         self.btn_home.setObjectName(u"btn_home")
         self.btn_home.setMinimumSize(QSize(0, 70))
@@ -55,6 +54,24 @@ class Ui_main_window(object):
 "}")
 
         self.horizontalLayout.addWidget(self.btn_home)
+
+        self.btn_clientes = QPushButton(self.frame)
+        self.btn_clientes.setObjectName(u"btn_clientes")
+        self.btn_clientes.setMinimumSize(QSize(0, 70))
+        self.btn_clientes.setFont(font)
+        self.btn_clientes.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_clientes.setStyleSheet(u"QPushButton{\n"
+"	font-family: \"Source Sans Pro Semibold\";\n"
+"    color: #fff;\n"
+"	font-size: 20px;\n"
+"	border-radius: 0px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"	color: #fff;\n"
+"    background-color: #2d618c;\n"
+"}")
+
+        self.horizontalLayout.addWidget(self.btn_clientes)
 
         self.btn_tables = QPushButton(self.frame)
         self.btn_tables.setObjectName(u"btn_tables")
@@ -331,6 +348,806 @@ class Ui_main_window(object):
         self.verticalLayout_17.addLayout(self.verticalLayout_15)
 
         self.Pages.addWidget(self.page_home)
+        self.page_cliente_cadastro = QWidget()
+        self.page_cliente_cadastro.setObjectName(u"page_cliente_cadastro")
+        self.verticalLayout_21 = QVBoxLayout(self.page_cliente_cadastro)
+        self.verticalLayout_21.setObjectName(u"verticalLayout_21")
+        self.frame_6 = QFrame(self.page_cliente_cadastro)
+        self.frame_6.setObjectName(u"frame_6")
+        self.frame_6.setFrameShape(QFrame.StyledPanel)
+        self.frame_6.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_32 = QVBoxLayout(self.frame_6)
+        self.verticalLayout_32.setObjectName(u"verticalLayout_32")
+        self.horizontalLayout_66 = QHBoxLayout()
+        self.horizontalLayout_66.setObjectName(u"horizontalLayout_66")
+        self.label_81 = QLabel(self.frame_6)
+        self.label_81.setObjectName(u"label_81")
+
+        self.horizontalLayout_66.addWidget(self.label_81)
+
+        self.btn_cadsatrar_usuario_8 = QPushButton(self.frame_6)
+        self.btn_cadsatrar_usuario_8.setObjectName(u"btn_cadsatrar_usuario_8")
+        self.btn_cadsatrar_usuario_8.setMinimumSize(QSize(0, 40))
+        self.btn_cadsatrar_usuario_8.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_cadsatrar_usuario_8.setStyleSheet(u"QPushButton{\n"
+"	background-color: #FFd343;\n"
+"	font-weight: 800;\n"
+"	font-size: 20px;\n"
+"	text-align: center;\n"
+"	border: 2px solid #000000;\n"
+"	border-radius: 10px;\n"
+"	padding: 5px;\n"
+"	font-family: \"Source Sans Pro Semibold\";\n"
+"	color: rgb(0, 0, 0);\n"
+"}\n"
+"QPushButton:hover{\n"
+"	background-color: rgb(255, 233, 160);\n"
+"	color: rgb(0, 0, 0);\n"
+"}")
+
+        self.horizontalLayout_66.addWidget(self.btn_cadsatrar_usuario_8)
+
+        self.btn_cadsatrar_usuario_10 = QPushButton(self.frame_6)
+        self.btn_cadsatrar_usuario_10.setObjectName(u"btn_cadsatrar_usuario_10")
+        self.btn_cadsatrar_usuario_10.setMinimumSize(QSize(0, 40))
+        self.btn_cadsatrar_usuario_10.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_cadsatrar_usuario_10.setStyleSheet(u"QPushButton{\n"
+"	background-color: #FFd343;\n"
+"	font-weight: 800;\n"
+"	font-size: 20px;\n"
+"	text-align: center;\n"
+"	border: 2px solid #000000;\n"
+"	border-radius: 10px;\n"
+"	padding: 5px;\n"
+"	font-family: \"Source Sans Pro Semibold\";\n"
+"	color: rgb(0, 0, 0);\n"
+"}\n"
+"QPushButton:hover{\n"
+"	background-color: rgb(255, 233, 160);\n"
+"	color: rgb(0, 0, 0);\n"
+"}")
+
+        self.horizontalLayout_66.addWidget(self.btn_cadsatrar_usuario_10)
+
+        self.btn_cadsatrar_usuario_9 = QPushButton(self.frame_6)
+        self.btn_cadsatrar_usuario_9.setObjectName(u"btn_cadsatrar_usuario_9")
+        self.btn_cadsatrar_usuario_9.setMinimumSize(QSize(0, 40))
+        self.btn_cadsatrar_usuario_9.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_cadsatrar_usuario_9.setStyleSheet(u"QPushButton{\n"
+"	background-color: #FFd343;\n"
+"	font-weight: 800;\n"
+"	font-size: 20px;\n"
+"	text-align: center;\n"
+"	border: 2px solid #000000;\n"
+"	border-radius: 10px;\n"
+"	padding: 5px;\n"
+"	font-family: \"Source Sans Pro Semibold\";\n"
+"	color: rgb(0, 0, 0);\n"
+"}\n"
+"QPushButton:hover{\n"
+"	background-color: rgb(255, 233, 160);\n"
+"	color: rgb(0, 0, 0);\n"
+"}")
+
+        self.horizontalLayout_66.addWidget(self.btn_cadsatrar_usuario_9)
+
+        self.label_82 = QLabel(self.frame_6)
+        self.label_82.setObjectName(u"label_82")
+
+        self.horizontalLayout_66.addWidget(self.label_82)
+
+
+        self.verticalLayout_32.addLayout(self.horizontalLayout_66)
+
+        self.tab_cadastro_cliente_3 = QTabWidget(self.frame_6)
+        self.tab_cadastro_cliente_3.setObjectName(u"tab_cadastro_cliente_3")
+        self.tab_cadastro_cliente_3.setMaximumSize(QSize(16777215, 621))
+        self.tab_cadastro_cliente_3.setStyleSheet(u"QLabel{\n"
+"	font-size:22pt; \n"
+"	color:#ffffff;\n"
+"	text-align: center;\n"
+"}")
+        self.tab_cliente_caractersticas_3 = QWidget()
+        self.tab_cliente_caractersticas_3.setObjectName(u"tab_cliente_caractersticas_3")
+        self.verticalLayout_33 = QVBoxLayout(self.tab_cliente_caractersticas_3)
+        self.verticalLayout_33.setObjectName(u"verticalLayout_33")
+        self.horizontalLayout_50 = QHBoxLayout()
+        self.horizontalLayout_50.setObjectName(u"horizontalLayout_50")
+        self.label_64 = QLabel(self.tab_cliente_caractersticas_3)
+        self.label_64.setObjectName(u"label_64")
+        self.label_64.setMinimumSize(QSize(200, 0))
+        self.label_64.setLayoutDirection(Qt.LeftToRight)
+        self.label_64.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_50.addWidget(self.label_64)
+
+        self.txt_cliente_telefone_3 = QLineEdit(self.tab_cliente_caractersticas_3)
+        self.txt_cliente_telefone_3.setObjectName(u"txt_cliente_telefone_3")
+        self.txt_cliente_telefone_3.setStyleSheet(u"Color: rgb(255, 255, 255);\n"
+"font-size: 20px;")
+
+        self.horizontalLayout_50.addWidget(self.txt_cliente_telefone_3)
+
+
+        self.verticalLayout_33.addLayout(self.horizontalLayout_50)
+
+        self.horizontalLayout_51 = QHBoxLayout()
+        self.horizontalLayout_51.setObjectName(u"horizontalLayout_51")
+        self.label_65 = QLabel(self.tab_cliente_caractersticas_3)
+        self.label_65.setObjectName(u"label_65")
+        self.label_65.setMinimumSize(QSize(200, 0))
+        self.label_65.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_51.addWidget(self.label_65)
+
+        self.txt_cliente_nome_3 = QLineEdit(self.tab_cliente_caractersticas_3)
+        self.txt_cliente_nome_3.setObjectName(u"txt_cliente_nome_3")
+        self.txt_cliente_nome_3.setStyleSheet(u"Color: rgb(255, 255, 255);\n"
+"font-size: 20px;")
+
+        self.horizontalLayout_51.addWidget(self.txt_cliente_nome_3)
+
+
+        self.verticalLayout_33.addLayout(self.horizontalLayout_51)
+
+        self.horizontalLayout_52 = QHBoxLayout()
+        self.horizontalLayout_52.setObjectName(u"horizontalLayout_52")
+        self.label_66 = QLabel(self.tab_cliente_caractersticas_3)
+        self.label_66.setObjectName(u"label_66")
+        self.label_66.setMinimumSize(QSize(200, 0))
+        self.label_66.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_52.addWidget(self.label_66)
+
+        self.txt_cliente_celular_3 = QLineEdit(self.tab_cliente_caractersticas_3)
+        self.txt_cliente_celular_3.setObjectName(u"txt_cliente_celular_3")
+        self.txt_cliente_celular_3.setStyleSheet(u"Color: rgb(255, 255, 255);\n"
+"font-size: 20px;")
+        self.txt_cliente_celular_3.setEchoMode(QLineEdit.Password)
+
+        self.horizontalLayout_52.addWidget(self.txt_cliente_celular_3)
+
+
+        self.verticalLayout_33.addLayout(self.horizontalLayout_52)
+
+        self.horizontalLayout_53 = QHBoxLayout()
+        self.horizontalLayout_53.setObjectName(u"horizontalLayout_53")
+        self.label_67 = QLabel(self.tab_cliente_caractersticas_3)
+        self.label_67.setObjectName(u"label_67")
+        self.label_67.setMinimumSize(QSize(200, 0))
+        self.label_67.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_53.addWidget(self.label_67)
+
+        self.txt_cliente_email_3 = QLineEdit(self.tab_cliente_caractersticas_3)
+        self.txt_cliente_email_3.setObjectName(u"txt_cliente_email_3")
+        self.txt_cliente_email_3.setStyleSheet(u"Color: rgb(255, 255, 255);\n"
+"font-size: 20px;")
+        self.txt_cliente_email_3.setEchoMode(QLineEdit.Password)
+
+        self.horizontalLayout_53.addWidget(self.txt_cliente_email_3)
+
+
+        self.verticalLayout_33.addLayout(self.horizontalLayout_53)
+
+        self.horizontalLayout_54 = QHBoxLayout()
+        self.horizontalLayout_54.setObjectName(u"horizontalLayout_54")
+        self.label_68 = QLabel(self.tab_cliente_caractersticas_3)
+        self.label_68.setObjectName(u"label_68")
+        self.label_68.setMinimumSize(QSize(200, 0))
+        self.label_68.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_54.addWidget(self.label_68)
+
+        self.combobox_cliente_sexo_3 = QComboBox(self.tab_cliente_caractersticas_3)
+        self.combobox_cliente_sexo_3.addItem("")
+        self.combobox_cliente_sexo_3.addItem("")
+        self.combobox_cliente_sexo_3.setObjectName(u"combobox_cliente_sexo_3")
+        self.combobox_cliente_sexo_3.setMinimumSize(QSize(200, 0))
+        self.combobox_cliente_sexo_3.setStyleSheet(u"Color: rgb(255, 255, 255);\n"
+"font-size: 20px;")
+
+        self.horizontalLayout_54.addWidget(self.combobox_cliente_sexo_3)
+
+
+        self.verticalLayout_33.addLayout(self.horizontalLayout_54)
+
+        self.tab_cadastro_cliente_3.addTab(self.tab_cliente_caractersticas_3, "")
+        self.tab_cliente_documentos_3 = QWidget()
+        self.tab_cliente_documentos_3.setObjectName(u"tab_cliente_documentos_3")
+        self.verticalLayout_34 = QVBoxLayout(self.tab_cliente_documentos_3)
+        self.verticalLayout_34.setObjectName(u"verticalLayout_34")
+        self.horizontalLayout_55 = QHBoxLayout()
+        self.horizontalLayout_55.setObjectName(u"horizontalLayout_55")
+        self.label_69 = QLabel(self.tab_cliente_documentos_3)
+        self.label_69.setObjectName(u"label_69")
+        self.label_69.setMinimumSize(QSize(200, 0))
+        self.label_69.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_55.addWidget(self.label_69)
+
+        self.txt_cliente_cpf_3 = QLineEdit(self.tab_cliente_documentos_3)
+        self.txt_cliente_cpf_3.setObjectName(u"txt_cliente_cpf_3")
+        self.txt_cliente_cpf_3.setStyleSheet(u"Color: rgb(255, 255, 255);\n"
+"font-size: 20px;")
+
+        self.horizontalLayout_55.addWidget(self.txt_cliente_cpf_3)
+
+
+        self.verticalLayout_34.addLayout(self.horizontalLayout_55)
+
+        self.horizontalLayout_56 = QHBoxLayout()
+        self.horizontalLayout_56.setObjectName(u"horizontalLayout_56")
+        self.label_70 = QLabel(self.tab_cliente_documentos_3)
+        self.label_70.setObjectName(u"label_70")
+        self.label_70.setMinimumSize(QSize(200, 0))
+        self.label_70.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_56.addWidget(self.label_70)
+
+        self.txt_cliente_cnpj_3 = QLineEdit(self.tab_cliente_documentos_3)
+        self.txt_cliente_cnpj_3.setObjectName(u"txt_cliente_cnpj_3")
+        self.txt_cliente_cnpj_3.setStyleSheet(u"Color: rgb(255, 255, 255);\n"
+"font-size: 20px;")
+
+        self.horizontalLayout_56.addWidget(self.txt_cliente_cnpj_3)
+
+
+        self.verticalLayout_34.addLayout(self.horizontalLayout_56)
+
+        self.horizontalLayout_57 = QHBoxLayout()
+        self.horizontalLayout_57.setObjectName(u"horizontalLayout_57")
+        self.label_71 = QLabel(self.tab_cliente_documentos_3)
+        self.label_71.setObjectName(u"label_71")
+        self.label_71.setMinimumSize(QSize(200, 0))
+        self.label_71.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_57.addWidget(self.label_71)
+
+        self.txt_cliente_identidade_3 = QLineEdit(self.tab_cliente_documentos_3)
+        self.txt_cliente_identidade_3.setObjectName(u"txt_cliente_identidade_3")
+        self.txt_cliente_identidade_3.setStyleSheet(u"Color: rgb(255, 255, 255);\n"
+"font-size: 20px;")
+
+        self.horizontalLayout_57.addWidget(self.txt_cliente_identidade_3)
+
+
+        self.verticalLayout_34.addLayout(self.horizontalLayout_57)
+
+        self.horizontalLayout_58 = QHBoxLayout()
+        self.horizontalLayout_58.setObjectName(u"horizontalLayout_58")
+        self.label_72 = QLabel(self.tab_cliente_documentos_3)
+        self.label_72.setObjectName(u"label_72")
+        self.label_72.setMinimumSize(QSize(200, 0))
+        self.label_72.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_58.addWidget(self.label_72)
+
+        self.txt_cliente_orgaoEmissor_3 = QLineEdit(self.tab_cliente_documentos_3)
+        self.txt_cliente_orgaoEmissor_3.setObjectName(u"txt_cliente_orgaoEmissor_3")
+        self.txt_cliente_orgaoEmissor_3.setStyleSheet(u"Color: rgb(255, 255, 255);\n"
+"font-size: 20px;")
+
+        self.horizontalLayout_58.addWidget(self.txt_cliente_orgaoEmissor_3)
+
+
+        self.verticalLayout_34.addLayout(self.horizontalLayout_58)
+
+        self.tab_cadastro_cliente_3.addTab(self.tab_cliente_documentos_3, "")
+        self.tab_cliente_endereco_3 = QWidget()
+        self.tab_cliente_endereco_3.setObjectName(u"tab_cliente_endereco_3")
+        self.verticalLayout_24 = QVBoxLayout(self.tab_cliente_endereco_3)
+        self.verticalLayout_24.setObjectName(u"verticalLayout_24")
+        self.horizontalLayout_61 = QHBoxLayout()
+        self.horizontalLayout_61.setObjectName(u"horizontalLayout_61")
+        self.label_75 = QLabel(self.tab_cliente_endereco_3)
+        self.label_75.setObjectName(u"label_75")
+        self.label_75.setMinimumSize(QSize(200, 0))
+        self.label_75.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_61.addWidget(self.label_75)
+
+        self.txt_cliente_cep_3 = QLineEdit(self.tab_cliente_endereco_3)
+        self.txt_cliente_cep_3.setObjectName(u"txt_cliente_cep_3")
+        self.txt_cliente_cep_3.setStyleSheet(u"Color: rgb(255, 255, 255);\n"
+"font-size: 20px;")
+
+        self.horizontalLayout_61.addWidget(self.txt_cliente_cep_3)
+
+
+        self.verticalLayout_24.addLayout(self.horizontalLayout_61)
+
+        self.horizontalLayout_62 = QHBoxLayout()
+        self.horizontalLayout_62.setObjectName(u"horizontalLayout_62")
+        self.label_76 = QLabel(self.tab_cliente_endereco_3)
+        self.label_76.setObjectName(u"label_76")
+        self.label_76.setMinimumSize(QSize(200, 0))
+        self.label_76.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_62.addWidget(self.label_76)
+
+        self.txt_cliente_bairro_3 = QLineEdit(self.tab_cliente_endereco_3)
+        self.txt_cliente_bairro_3.setObjectName(u"txt_cliente_bairro_3")
+        self.txt_cliente_bairro_3.setStyleSheet(u"Color: rgb(255, 255, 255);\n"
+"font-size: 20px;")
+
+        self.horizontalLayout_62.addWidget(self.txt_cliente_bairro_3)
+
+
+        self.verticalLayout_24.addLayout(self.horizontalLayout_62)
+
+        self.horizontalLayout_63 = QHBoxLayout()
+        self.horizontalLayout_63.setSpacing(6)
+        self.horizontalLayout_63.setObjectName(u"horizontalLayout_63")
+        self.horizontalLayout_63.setContentsMargins(0, -1, 0, -1)
+        self.horizontalLayout_64 = QHBoxLayout()
+        self.horizontalLayout_64.setObjectName(u"horizontalLayout_64")
+        self.label_77 = QLabel(self.tab_cliente_endereco_3)
+        self.label_77.setObjectName(u"label_77")
+        self.label_77.setMinimumSize(QSize(200, 0))
+        self.label_77.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_64.addWidget(self.label_77)
+
+        self.txt_cliente_numeroCasa_3 = QLineEdit(self.tab_cliente_endereco_3)
+        self.txt_cliente_numeroCasa_3.setObjectName(u"txt_cliente_numeroCasa_3")
+        self.txt_cliente_numeroCasa_3.setStyleSheet(u"Color: rgb(255, 255, 255);\n"
+"font-size: 20px;")
+
+        self.horizontalLayout_64.addWidget(self.txt_cliente_numeroCasa_3)
+
+
+        self.horizontalLayout_63.addLayout(self.horizontalLayout_64)
+
+        self.label_78 = QLabel(self.tab_cliente_endereco_3)
+        self.label_78.setObjectName(u"label_78")
+        self.label_78.setMinimumSize(QSize(200, 0))
+        self.label_78.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_63.addWidget(self.label_78)
+
+        self.txt_cliente_logradouro_3 = QLineEdit(self.tab_cliente_endereco_3)
+        self.txt_cliente_logradouro_3.setObjectName(u"txt_cliente_logradouro_3")
+        self.txt_cliente_logradouro_3.setStyleSheet(u"Color: rgb(255, 255, 255);\n"
+"font-size: 20px;")
+
+        self.horizontalLayout_63.addWidget(self.txt_cliente_logradouro_3)
+
+
+        self.verticalLayout_24.addLayout(self.horizontalLayout_63)
+
+        self.horizontalLayout_61b = QHBoxLayout()
+        self.horizontalLayout_61b.setSpacing(25)
+        self.horizontalLayout_61b.setObjectName(u"horizontalLayout_61b")
+        self.label_73 = QLabel(self.tab_cliente_endereco_3)
+        self.label_73.setObjectName(u"label_73")
+        self.label_73.setMinimumSize(QSize(200, 0))
+        self.label_73.setAlignment(Qt.AlignCenter)
+        self.label_73.setMargin(0)
+
+        self.horizontalLayout_61b.addWidget(self.label_73)
+
+        self.txt_cliente_cidade_3 = QLineEdit(self.tab_cliente_endereco_3)
+        self.txt_cliente_cidade_3.setObjectName(u"txt_cliente_cidade_3")
+        self.txt_cliente_cidade_3.setStyleSheet(u"Color: rgb(255, 255, 255);\n"
+"font-size: 20px;")
+
+        self.horizontalLayout_61b.addWidget(self.txt_cliente_cidade_3)
+
+        self.horizontalLayout_60 = QHBoxLayout()
+        self.horizontalLayout_60.setObjectName(u"horizontalLayout_60")
+        self.label_74 = QLabel(self.tab_cliente_endereco_3)
+        self.label_74.setObjectName(u"label_74")
+        self.label_74.setMinimumSize(QSize(200, 0))
+        self.label_74.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_60.addWidget(self.label_74)
+
+        self.combobox_cliente_estado_3 = QComboBox(self.tab_cliente_endereco_3)
+        self.combobox_cliente_estado_3.addItem("")
+        self.combobox_cliente_estado_3.addItem("")
+        self.combobox_cliente_estado_3.addItem("")
+        self.combobox_cliente_estado_3.addItem("")
+        self.combobox_cliente_estado_3.addItem("")
+        self.combobox_cliente_estado_3.addItem("")
+        self.combobox_cliente_estado_3.addItem("")
+        self.combobox_cliente_estado_3.addItem("")
+        self.combobox_cliente_estado_3.addItem("")
+        self.combobox_cliente_estado_3.addItem("")
+        self.combobox_cliente_estado_3.addItem("")
+        self.combobox_cliente_estado_3.addItem("")
+        self.combobox_cliente_estado_3.addItem("")
+        self.combobox_cliente_estado_3.addItem("")
+        self.combobox_cliente_estado_3.addItem("")
+        self.combobox_cliente_estado_3.addItem("")
+        self.combobox_cliente_estado_3.addItem("")
+        self.combobox_cliente_estado_3.addItem("")
+        self.combobox_cliente_estado_3.addItem("")
+        self.combobox_cliente_estado_3.addItem("")
+        self.combobox_cliente_estado_3.addItem("")
+        self.combobox_cliente_estado_3.addItem("")
+        self.combobox_cliente_estado_3.addItem("")
+        self.combobox_cliente_estado_3.addItem("")
+        self.combobox_cliente_estado_3.addItem("")
+        self.combobox_cliente_estado_3.addItem("")
+        self.combobox_cliente_estado_3.addItem("")
+        self.combobox_cliente_estado_3.setObjectName(u"combobox_cliente_estado_3")
+        self.combobox_cliente_estado_3.setMinimumSize(QSize(200, 0))
+        self.combobox_cliente_estado_3.setStyleSheet(u"Color: rgb(255, 255, 255);\n"
+"font-size: 20px;")
+
+        self.horizontalLayout_60.addWidget(self.combobox_cliente_estado_3)
+
+
+        self.horizontalLayout_61b.addLayout(self.horizontalLayout_60)
+
+
+        self.verticalLayout_24.addLayout(self.horizontalLayout_61b)
+
+        self.tab_cadastro_cliente_3.addTab(self.tab_cliente_endereco_3, "")
+
+        self.verticalLayout_32.addWidget(self.tab_cadastro_cliente_3)
+
+        self.horizontalLayout_65 = QHBoxLayout()
+        self.horizontalLayout_65.setObjectName(u"horizontalLayout_65")
+        self.label_79 = QLabel(self.frame_6)
+        self.label_79.setObjectName(u"label_79")
+
+        self.horizontalLayout_65.addWidget(self.label_79)
+
+        self.btn_cadsatrar_usuario_6 = QPushButton(self.frame_6)
+        self.btn_cadsatrar_usuario_6.setObjectName(u"btn_cadsatrar_usuario_6")
+        self.btn_cadsatrar_usuario_6.setMinimumSize(QSize(0, 40))
+        self.btn_cadsatrar_usuario_6.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_cadsatrar_usuario_6.setStyleSheet(u"QPushButton{\n"
+"	background-color: #FFd343;\n"
+"	font-weight: 800;\n"
+"	font-size: 30px;\n"
+"	text-align: center;\n"
+"	border: 2px solid #000000;\n"
+"	border-radius: 10px;\n"
+"	font-family: \"Source Sans Pro Semibold\";\n"
+"	color: rgb(0, 0, 0);\n"
+"}\n"
+"QPushButton:hover{\n"
+"	background-color: rgb(255, 233, 160);\n"
+"	color: rgb(0, 0, 0);\n"
+"}")
+
+        self.horizontalLayout_65.addWidget(self.btn_cadsatrar_usuario_6)
+
+        self.btn_cadsatrar_usuario_7 = QPushButton(self.frame_6)
+        self.btn_cadsatrar_usuario_7.setObjectName(u"btn_cadsatrar_usuario_7")
+        self.btn_cadsatrar_usuario_7.setMinimumSize(QSize(0, 40))
+        self.btn_cadsatrar_usuario_7.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_cadsatrar_usuario_7.setStyleSheet(u"QPushButton{\n"
+"	background-color: #FFd343;\n"
+"	font-weight: 800;\n"
+"	font-size: 30px;\n"
+"	text-align: center;\n"
+"	border: 2px solid #000000;\n"
+"	border-radius: 10px;\n"
+"	font-family: \"Source Sans Pro Semibold\";\n"
+"	color: rgb(0, 0, 0);\n"
+"}\n"
+"QPushButton:hover{\n"
+"	background-color: rgb(255, 233, 160);\n"
+"	color: rgb(0, 0, 0);\n"
+"}")
+
+        self.horizontalLayout_65.addWidget(self.btn_cadsatrar_usuario_7)
+
+        self.label_80 = QLabel(self.frame_6)
+        self.label_80.setObjectName(u"label_80")
+
+        self.horizontalLayout_65.addWidget(self.label_80)
+
+
+        self.verticalLayout_32.addLayout(self.horizontalLayout_65)
+
+
+        self.verticalLayout_21.addWidget(self.frame_6)
+
+        self.Pages.addWidget(self.page_cliente_cadastro)
+        self.page_cliente_clientes = QWidget()
+        self.page_cliente_clientes.setObjectName(u"page_cliente_clientes")
+        self.verticalLayout_22 = QVBoxLayout(self.page_cliente_clientes)
+        self.verticalLayout_22.setObjectName(u"verticalLayout_22")
+        self.frame_5 = QFrame(self.page_cliente_clientes)
+        self.frame_5.setObjectName(u"frame_5")
+        self.frame_5.setFrameShape(QFrame.StyledPanel)
+        self.frame_5.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_29 = QVBoxLayout(self.frame_5)
+        self.verticalLayout_29.setObjectName(u"verticalLayout_29")
+        self.horizontalLayout_67 = QHBoxLayout()
+        self.horizontalLayout_67.setObjectName(u"horizontalLayout_67")
+        self.label_83 = QLabel(self.frame_5)
+        self.label_83.setObjectName(u"label_83")
+
+        self.horizontalLayout_67.addWidget(self.label_83)
+
+        self.btn_cadsatrar_usuario_11 = QPushButton(self.frame_5)
+        self.btn_cadsatrar_usuario_11.setObjectName(u"btn_cadsatrar_usuario_11")
+        self.btn_cadsatrar_usuario_11.setMinimumSize(QSize(0, 40))
+        self.btn_cadsatrar_usuario_11.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_cadsatrar_usuario_11.setStyleSheet(u"QPushButton{\n"
+"	background-color: #FFd343;\n"
+"	font-weight: 800;\n"
+"	font-size: 20px;\n"
+"	text-align: center;\n"
+"	border: 2px solid #000000;\n"
+"	border-radius: 10px;\n"
+"	padding: 5px;\n"
+"	font-family: \"Source Sans Pro Semibold\";\n"
+"	color: rgb(0, 0, 0);\n"
+"}\n"
+"QPushButton:hover{\n"
+"	background-color: rgb(255, 233, 160);\n"
+"	color: rgb(0, 0, 0);\n"
+"}")
+
+        self.horizontalLayout_67.addWidget(self.btn_cadsatrar_usuario_11)
+
+        self.btn_cadsatrar_usuario_12 = QPushButton(self.frame_5)
+        self.btn_cadsatrar_usuario_12.setObjectName(u"btn_cadsatrar_usuario_12")
+        self.btn_cadsatrar_usuario_12.setMinimumSize(QSize(0, 40))
+        self.btn_cadsatrar_usuario_12.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_cadsatrar_usuario_12.setStyleSheet(u"QPushButton{\n"
+"	background-color: #FFd343;\n"
+"	font-weight: 800;\n"
+"	font-size: 20px;\n"
+"	text-align: center;\n"
+"	border: 2px solid #000000;\n"
+"	border-radius: 10px;\n"
+"	padding: 5px;\n"
+"	font-family: \"Source Sans Pro Semibold\";\n"
+"	color: rgb(0, 0, 0);\n"
+"}\n"
+"QPushButton:hover{\n"
+"	background-color: rgb(255, 233, 160);\n"
+"	color: rgb(0, 0, 0);\n"
+"}")
+
+        self.horizontalLayout_67.addWidget(self.btn_cadsatrar_usuario_12)
+
+        self.btn_cadsatrar_usuario_13 = QPushButton(self.frame_5)
+        self.btn_cadsatrar_usuario_13.setObjectName(u"btn_cadsatrar_usuario_13")
+        self.btn_cadsatrar_usuario_13.setMinimumSize(QSize(0, 40))
+        self.btn_cadsatrar_usuario_13.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_cadsatrar_usuario_13.setStyleSheet(u"QPushButton{\n"
+"	background-color: #FFd343;\n"
+"	font-weight: 800;\n"
+"	font-size: 20px;\n"
+"	text-align: center;\n"
+"	border: 2px solid #000000;\n"
+"	border-radius: 10px;\n"
+"	padding: 5px;\n"
+"	font-family: \"Source Sans Pro Semibold\";\n"
+"	color: rgb(0, 0, 0);\n"
+"}\n"
+"QPushButton:hover{\n"
+"	background-color: rgb(255, 233, 160);\n"
+"	color: rgb(0, 0, 0);\n"
+"}")
+
+        self.horizontalLayout_67.addWidget(self.btn_cadsatrar_usuario_13)
+
+        self.label_84 = QLabel(self.frame_5)
+        self.label_84.setObjectName(u"label_84")
+
+        self.horizontalLayout_67.addWidget(self.label_84)
+
+
+        self.verticalLayout_29.addLayout(self.horizontalLayout_67)
+
+        self.horizontalLayout_34 = QHBoxLayout()
+        self.horizontalLayout_34.setObjectName(u"horizontalLayout_34")
+        self.btn_cliente_novoCliente_2 = QPushButton(self.frame_5)
+        self.btn_cliente_novoCliente_2.setObjectName(u"btn_cliente_novoCliente_2")
+        self.btn_cliente_novoCliente_2.setMinimumSize(QSize(300, 40))
+        self.btn_cliente_novoCliente_2.setMaximumSize(QSize(396, 16777209))
+        font2 = QFont()
+        font2.setFamily(u"Source Sans Pro Semibold")
+        font2.setBold(True)
+        font2.setWeight(99)
+        self.btn_cliente_novoCliente_2.setFont(font2)
+        self.btn_cliente_novoCliente_2.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_cliente_novoCliente_2.setContextMenuPolicy(Qt.CustomContextMenu)
+        self.btn_cliente_novoCliente_2.setStyleSheet(u"QPushButton{\n"
+"	background-color: #FFd343;\n"
+"	font-weight: 800;\n"
+"	font-size: 25px;\n"
+"	text-align: center;\n"
+"	border: 2px solid #000000;\n"
+"	border-radius: 10px;\n"
+"	font-family: \"Source Sans Pro Semibold\";\n"
+"	color: rgb(0, 0, 0);\n"
+"}\n"
+"QPushButton:hover{\n"
+"	background-color: rgb(255, 233, 160);\n"
+"	color: rgb(0, 0, 0);\n"
+"}")
+
+        self.horizontalLayout_34.addWidget(self.btn_cliente_novoCliente_2)
+
+        self.lineedit_cliente_buscarCliente_2 = QLineEdit(self.frame_5)
+        self.lineedit_cliente_buscarCliente_2.setObjectName(u"lineedit_cliente_buscarCliente_2")
+        self.lineedit_cliente_buscarCliente_2.setMinimumSize(QSize(0, 35))
+        self.lineedit_cliente_buscarCliente_2.setStyleSheet(u"border: 3px solid rgb(255, 255, 255);\n"
+"color: rgb(255,255,255);\n"
+"border-radius: 20px 20px 0px 0px;\n"
+"font-family: 'Montserrat';\n"
+"font-size: 25px;\n"
+"text-align: center;\n"
+"")
+        self.lineedit_cliente_buscarCliente_2.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_34.addWidget(self.lineedit_cliente_buscarCliente_2)
+
+
+        self.verticalLayout_29.addLayout(self.horizontalLayout_34)
+
+        self.verticalSpacer_4 = QSpacerItem(18, 40, QSizePolicy.Minimum, QSizePolicy.Minimum)
+
+        self.verticalLayout_29.addItem(self.verticalSpacer_4)
+
+        self.tableView_cliente_2 = QTableView(self.frame_5)
+        self.tableView_cliente_2.setObjectName(u"tableView_cliente_2")
+        self.tableView_cliente_2.setStyleSheet(u"border: 1px solid rgb(255, 255, 255);\n"
+"color: rgb(0,0,0);\n"
+"font-family: 'Montserrat';\n"
+"font-size: 20px;\n"
+"text-align: center;\n"
+"background-color:rgb(59, 126, 182)\n"
+"")
+        self.tableView_cliente_2.setFrameShape(QFrame.NoFrame)
+        self.tableView_cliente_2.setFrameShadow(QFrame.Sunken)
+        self.tableView_cliente_2.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        self.tableView_cliente_2.setAlternatingRowColors(False)
+
+        self.verticalLayout_29.addWidget(self.tableView_cliente_2)
+
+
+        self.verticalLayout_22.addWidget(self.frame_5)
+
+        self.Pages.addWidget(self.page_cliente_clientes)
+        self.page_cliente_exportar = QWidget()
+        self.page_cliente_exportar.setObjectName(u"page_cliente_exportar")
+        self.verticalLayout_23 = QVBoxLayout(self.page_cliente_exportar)
+        self.verticalLayout_23.setObjectName(u"verticalLayout_23")
+        self.verticalLayout_20 = QVBoxLayout()
+        self.verticalLayout_20.setObjectName(u"verticalLayout_20")
+        self.horizontalLayout_68 = QHBoxLayout()
+        self.horizontalLayout_68.setObjectName(u"horizontalLayout_68")
+        self.label_85 = QLabel(self.page_cliente_exportar)
+        self.label_85.setObjectName(u"label_85")
+
+        self.horizontalLayout_68.addWidget(self.label_85)
+
+        self.btn_cadsatrar_usuario_14 = QPushButton(self.page_cliente_exportar)
+        self.btn_cadsatrar_usuario_14.setObjectName(u"btn_cadsatrar_usuario_14")
+        self.btn_cadsatrar_usuario_14.setMinimumSize(QSize(0, 40))
+        self.btn_cadsatrar_usuario_14.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_cadsatrar_usuario_14.setStyleSheet(u"QPushButton{\n"
+"	background-color: #FFd343;\n"
+"	font-weight: 800;\n"
+"	font-size: 20px;\n"
+"	text-align: center;\n"
+"	border: 2px solid #000000;\n"
+"	border-radius: 10px;\n"
+"	padding: 5px;\n"
+"	font-family: \"Source Sans Pro Semibold\";\n"
+"	color: rgb(0, 0, 0);\n"
+"}\n"
+"QPushButton:hover{\n"
+"	background-color: rgb(255, 233, 160);\n"
+"	color: rgb(0, 0, 0);\n"
+"}")
+
+        self.horizontalLayout_68.addWidget(self.btn_cadsatrar_usuario_14)
+
+        self.btn_cadsatrar_usuario_15 = QPushButton(self.page_cliente_exportar)
+        self.btn_cadsatrar_usuario_15.setObjectName(u"btn_cadsatrar_usuario_15")
+        self.btn_cadsatrar_usuario_15.setMinimumSize(QSize(0, 40))
+        self.btn_cadsatrar_usuario_15.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_cadsatrar_usuario_15.setStyleSheet(u"QPushButton{\n"
+"	background-color: #FFd343;\n"
+"	font-weight: 800;\n"
+"	font-size: 20px;\n"
+"	text-align: center;\n"
+"	border: 2px solid #000000;\n"
+"	border-radius: 10px;\n"
+"	padding: 5px;\n"
+"	font-family: \"Source Sans Pro Semibold\";\n"
+"	color: rgb(0, 0, 0);\n"
+"}\n"
+"QPushButton:hover{\n"
+"	background-color: rgb(255, 233, 160);\n"
+"	color: rgb(0, 0, 0);\n"
+"}")
+
+        self.horizontalLayout_68.addWidget(self.btn_cadsatrar_usuario_15)
+
+        self.btn_cadsatrar_usuario_16 = QPushButton(self.page_cliente_exportar)
+        self.btn_cadsatrar_usuario_16.setObjectName(u"btn_cadsatrar_usuario_16")
+        self.btn_cadsatrar_usuario_16.setMinimumSize(QSize(0, 40))
+        self.btn_cadsatrar_usuario_16.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_cadsatrar_usuario_16.setStyleSheet(u"QPushButton{\n"
+"	background-color: #FFd343;\n"
+"	font-weight: 800;\n"
+"	font-size: 20px;\n"
+"	text-align: center;\n"
+"	border: 2px solid #000000;\n"
+"	border-radius: 10px;\n"
+"	padding: 5px;\n"
+"	font-family: \"Source Sans Pro Semibold\";\n"
+"	color: rgb(0, 0, 0);\n"
+"}\n"
+"QPushButton:hover{\n"
+"	background-color: rgb(255, 233, 160);\n"
+"	color: rgb(0, 0, 0);\n"
+"}")
+
+        self.horizontalLayout_68.addWidget(self.btn_cadsatrar_usuario_16)
+
+        self.label_86 = QLabel(self.page_cliente_exportar)
+        self.label_86.setObjectName(u"label_86")
+
+        self.horizontalLayout_68.addWidget(self.label_86)
+
+
+        self.verticalLayout_20.addLayout(self.horizontalLayout_68)
+
+        self.label_30 = QLabel(self.page_cliente_exportar)
+        self.label_30.setObjectName(u"label_30")
+
+        self.verticalLayout_20.addWidget(self.label_30)
+
+        self.listView_2 = QListView(self.page_cliente_exportar)
+        self.listView_2.setObjectName(u"listView_2")
+
+        self.verticalLayout_20.addWidget(self.listView_2)
+
+        self.horizontalLayout_17 = QHBoxLayout()
+        self.horizontalLayout_17.setObjectName(u"horizontalLayout_17")
+        self.label_8 = QLabel(self.page_cliente_exportar)
+        self.label_8.setObjectName(u"label_8")
+
+        self.horizontalLayout_17.addWidget(self.label_8)
+
+        self.btn_cliente_exportarParaExcel_2 = QPushButton(self.page_cliente_exportar)
+        self.btn_cliente_exportarParaExcel_2.setObjectName(u"btn_cliente_exportarParaExcel_2")
+        self.btn_cliente_exportarParaExcel_2.setMinimumSize(QSize(0, 40))
+        self.btn_cliente_exportarParaExcel_2.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_cliente_exportarParaExcel_2.setStyleSheet(u"QPushButton{\n"
+"	background-color: #FFd343;\n"
+"	font-weight: 800;\n"
+"	font-size: 30px;\n"
+"	text-align: center;\n"
+"	border: 2px solid #000000;\n"
+"	border-radius: 10px;\n"
+"	font-family: \"Source Sans Pro Semibold\";\n"
+"	color: rgb(0, 0, 0);\n"
+"}\n"
+"QPushButton:hover{\n"
+"	background-color: rgb(255, 233, 160);\n"
+"	color: rgb(0, 0, 0);\n"
+"}")
+
+        self.horizontalLayout_17.addWidget(self.btn_cliente_exportarParaExcel_2)
+
+        self.label_31 = QLabel(self.page_cliente_exportar)
+        self.label_31.setObjectName(u"label_31")
+
+        self.horizontalLayout_17.addWidget(self.label_31)
+
+
+        self.verticalLayout_20.addLayout(self.horizontalLayout_17)
+
+
+        self.verticalLayout_23.addLayout(self.verticalLayout_20)
+
+        self.Pages.addWidget(self.page_cliente_exportar)
         self.page_tables = QWidget()
         self.page_tables.setObjectName(u"page_tables")
         self.verticalLayout_2 = QVBoxLayout(self.page_tables)
@@ -770,13 +1587,17 @@ class Ui_main_window(object):
         self.Pages.addWidget(self.page_sobre)
         self.page_contato = QWidget()
         self.page_contato.setObjectName(u"page_contato")
+        self.verticalLayout_28 = QVBoxLayout(self.page_contato)
+        self.verticalLayout_28.setObjectName(u"verticalLayout_28")
         self.label_29 = QLabel(self.page_contato)
         self.label_29.setObjectName(u"label_29")
-        self.label_29.setGeometry(QRect(100, 60, 801, 221))
         self.label_29.setAutoFillBackground(False)
         self.label_29.setTextFormat(Qt.AutoText)
         self.label_29.setAlignment(Qt.AlignCenter)
         self.label_29.setWordWrap(False)
+
+        self.verticalLayout_28.addWidget(self.label_29)
+
         self.Pages.addWidget(self.page_contato)
 
         self.verticalLayout.addWidget(self.Pages)
@@ -786,6 +1607,7 @@ class Ui_main_window(object):
         self.retranslateUi(main_window)
 
         self.Pages.setCurrentIndex(1)
+        self.tab_cadastro_cliente_3.setCurrentIndex(0)
         self.tabWidget.setCurrentIndex(0)
 
 
@@ -795,6 +1617,7 @@ class Ui_main_window(object):
     def retranslateUi(self, main_window):
         main_window.setWindowTitle(QCoreApplication.translate("main_window", u"MainWindow", None))
         self.btn_home.setText(QCoreApplication.translate("main_window", u"HOME", None))
+        self.btn_clientes.setText(QCoreApplication.translate("main_window", u"CLIENTES", None))
         self.btn_tables.setText(QCoreApplication.translate("main_window", u"TABLES", None))
         self.btn_importar.setText(QCoreApplication.translate("main_window", u"IMPORTAR", None))
         self.btn_sobre.setText(QCoreApplication.translate("main_window", u"SOBRE", None))
@@ -812,6 +1635,80 @@ class Ui_main_window(object):
         self.label_24.setText("")
         self.btn_main_cadastrar_usuario.setText(QCoreApplication.translate("main_window", u"Cadastrar Usu\u00e1rio", None))
         self.label_23.setText("")
+        self.label_81.setText("")
+        self.btn_cadsatrar_usuario_8.setText(QCoreApplication.translate("main_window", u"Cadastrar Clientes", None))
+        self.btn_cadsatrar_usuario_10.setText(QCoreApplication.translate("main_window", u"Todos Clientes", None))
+        self.btn_cadsatrar_usuario_9.setText(QCoreApplication.translate("main_window", u"Exportar Clientes", None))
+        self.label_82.setText("")
+        self.label_64.setText(QCoreApplication.translate("main_window", u"Telefone:", None))
+        self.label_65.setText(QCoreApplication.translate("main_window", u"Nome:", None))
+        self.label_66.setText(QCoreApplication.translate("main_window", u"Celular:", None))
+        self.label_67.setText(QCoreApplication.translate("main_window", u"E-mail:", None))
+        self.label_68.setText(QCoreApplication.translate("main_window", u"Sexo:", None))
+        self.combobox_cliente_sexo_3.setItemText(0, QCoreApplication.translate("main_window", u"Masculino", None))
+        self.combobox_cliente_sexo_3.setItemText(1, QCoreApplication.translate("main_window", u"Feminino", None))
+
+        self.tab_cadastro_cliente_3.setTabText(self.tab_cadastro_cliente_3.indexOf(self.tab_cliente_caractersticas_3), QCoreApplication.translate("main_window", u"Caracter\u00edsticas", None))
+        self.label_69.setText(QCoreApplication.translate("main_window", u"CPF:", None))
+        self.label_70.setText(QCoreApplication.translate("main_window", u"CNPJ:", None))
+        self.label_71.setText(QCoreApplication.translate("main_window", u"Identidade", None))
+        self.label_72.setText(QCoreApplication.translate("main_window", u"Org\u00e3o Emissor:", None))
+        self.tab_cadastro_cliente_3.setTabText(self.tab_cadastro_cliente_3.indexOf(self.tab_cliente_documentos_3), QCoreApplication.translate("main_window", u"Documentos", None))
+        self.label_75.setText(QCoreApplication.translate("main_window", u"CEP:", None))
+        self.label_76.setText(QCoreApplication.translate("main_window", u"Bairro:", None))
+        self.label_77.setText(QCoreApplication.translate("main_window", u"N\u00famero:", None))
+        self.label_78.setText(QCoreApplication.translate("main_window", u"Logradouro:", None))
+        self.label_73.setText(QCoreApplication.translate("main_window", u"Cidade:", None))
+        self.label_74.setText(QCoreApplication.translate("main_window", u"Estado:", None))
+        self.combobox_cliente_estado_3.setItemText(0, QCoreApplication.translate("main_window", u"AC", None))
+        self.combobox_cliente_estado_3.setItemText(1, QCoreApplication.translate("main_window", u"AL", None))
+        self.combobox_cliente_estado_3.setItemText(2, QCoreApplication.translate("main_window", u"AP", None))
+        self.combobox_cliente_estado_3.setItemText(3, QCoreApplication.translate("main_window", u"AM", None))
+        self.combobox_cliente_estado_3.setItemText(4, QCoreApplication.translate("main_window", u"BA", None))
+        self.combobox_cliente_estado_3.setItemText(5, QCoreApplication.translate("main_window", u"CE", None))
+        self.combobox_cliente_estado_3.setItemText(6, QCoreApplication.translate("main_window", u"DF", None))
+        self.combobox_cliente_estado_3.setItemText(7, QCoreApplication.translate("main_window", u"ES", None))
+        self.combobox_cliente_estado_3.setItemText(8, QCoreApplication.translate("main_window", u"GO", None))
+        self.combobox_cliente_estado_3.setItemText(9, QCoreApplication.translate("main_window", u"MA", None))
+        self.combobox_cliente_estado_3.setItemText(10, QCoreApplication.translate("main_window", u"MT", None))
+        self.combobox_cliente_estado_3.setItemText(11, QCoreApplication.translate("main_window", u"MS", None))
+        self.combobox_cliente_estado_3.setItemText(12, QCoreApplication.translate("main_window", u"MG", None))
+        self.combobox_cliente_estado_3.setItemText(13, QCoreApplication.translate("main_window", u"PA", None))
+        self.combobox_cliente_estado_3.setItemText(14, QCoreApplication.translate("main_window", u"PB", None))
+        self.combobox_cliente_estado_3.setItemText(15, QCoreApplication.translate("main_window", u"PR", None))
+        self.combobox_cliente_estado_3.setItemText(16, QCoreApplication.translate("main_window", u"PE", None))
+        self.combobox_cliente_estado_3.setItemText(17, QCoreApplication.translate("main_window", u"PI", None))
+        self.combobox_cliente_estado_3.setItemText(18, QCoreApplication.translate("main_window", u"RJ", None))
+        self.combobox_cliente_estado_3.setItemText(19, QCoreApplication.translate("main_window", u"RN", None))
+        self.combobox_cliente_estado_3.setItemText(20, QCoreApplication.translate("main_window", u"RS", None))
+        self.combobox_cliente_estado_3.setItemText(21, QCoreApplication.translate("main_window", u"RO", None))
+        self.combobox_cliente_estado_3.setItemText(22, QCoreApplication.translate("main_window", u"RR", None))
+        self.combobox_cliente_estado_3.setItemText(23, QCoreApplication.translate("main_window", u"SC", None))
+        self.combobox_cliente_estado_3.setItemText(24, QCoreApplication.translate("main_window", u"SP", None))
+        self.combobox_cliente_estado_3.setItemText(25, QCoreApplication.translate("main_window", u"SE", None))
+        self.combobox_cliente_estado_3.setItemText(26, QCoreApplication.translate("main_window", u"TO", None))
+
+        self.tab_cadastro_cliente_3.setTabText(self.tab_cadastro_cliente_3.indexOf(self.tab_cliente_endereco_3), QCoreApplication.translate("main_window", u"Endere\u00e7o", None))
+        self.label_79.setText("")
+        self.btn_cadsatrar_usuario_6.setText(QCoreApplication.translate("main_window", u"Cadastrar", None))
+        self.btn_cadsatrar_usuario_7.setText(QCoreApplication.translate("main_window", u"Cancelar", None))
+        self.label_80.setText("")
+        self.label_83.setText("")
+        self.btn_cadsatrar_usuario_11.setText(QCoreApplication.translate("main_window", u"Cadastrar Clientes", None))
+        self.btn_cadsatrar_usuario_12.setText(QCoreApplication.translate("main_window", u"Todos Clientes", None))
+        self.btn_cadsatrar_usuario_13.setText(QCoreApplication.translate("main_window", u"Exportar Clientes", None))
+        self.label_84.setText("")
+        self.btn_cliente_novoCliente_2.setText(QCoreApplication.translate("main_window", u"Novo Cliente", None))
+        self.lineedit_cliente_buscarCliente_2.setPlaceholderText(QCoreApplication.translate("main_window", u"Buscar cliente", None))
+        self.label_85.setText("")
+        self.btn_cadsatrar_usuario_14.setText(QCoreApplication.translate("main_window", u"Cadastrar Clientes", None))
+        self.btn_cadsatrar_usuario_15.setText(QCoreApplication.translate("main_window", u"Todos Clientes", None))
+        self.btn_cadsatrar_usuario_16.setText(QCoreApplication.translate("main_window", u"Exportar Clientes", None))
+        self.label_86.setText("")
+        self.label_30.setText(QCoreApplication.translate("main_window", u"<html><head/><body><p align=\"center\"><span style=\" font-size:28pt; color:#ffffff;\">Quantidade de Clientes </span></p><p align=\"center\"><span style=\" font-size:28pt; color:#ffffff;\">Cadastrados:</span></p></body></html>", None))
+        self.label_8.setText("")
+        self.btn_cliente_exportarParaExcel_2.setText(QCoreApplication.translate("main_window", u"Exportar para Excel", None))
+        self.label_31.setText("")
         self.label_4.setText(QCoreApplication.translate("main_window", u"Estoque", None))
         ___qtreewidgetitem = self.tw_estoque.headerItem()
         ___qtreewidgetitem.setText(15, QCoreApplication.translate("main_window", u"Data_Saida", None));

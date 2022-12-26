@@ -45,18 +45,15 @@ class Login(QWidget, Ui_Login):
           msg.setText(f"Tentativa {self.tentativas} de 3\nO sistema será encerrado!\nCaso tenha esquecido sua senha, favor contatar o administrador do sistema.")
           msg.exec_()
           db.close_connection()
-          sys.exit(0)
+          sys.exit(0) 
 
-   
 class MainWindow(QMainWindow, Ui_main_window):
     def __init__(self, user):
       super(MainWindow, self).__init__()
       self.setupUi(self)
       self.setWindowTitle("Tela Principal")
-
-
-
       self.user = 'bryan'
+
       if user.lower() != 'administrador':
         self.btn_main_cadastrar_usuario.setVisible(False)
 
@@ -67,6 +64,7 @@ class MainWindow(QMainWindow, Ui_main_window):
       self.btn_importar.clicked.connect(lambda:self.Pages.setCurrentWidget(self.page_import))
       self.btn_sobre.clicked.connect(lambda:self.Pages.setCurrentWidget(self.page_sobre))
       self.btn_contatos.clicked.connect(lambda:self.Pages.setCurrentWidget(self.page_contato))
+      self.btn_clientes.clicked.connect(lambda:self.Pages.setCurrentWidget(self.page_cliente_cadastro))
 
       self.btn_cadsatrar_usuario.clicked.connect(self.subscribe_user)
 
@@ -118,6 +116,19 @@ class MainWindow(QMainWindow, Ui_main_window):
         self.txt_usuario.setText("")
         self.txt_senha.setText("")
         self.txt_senha2.setText("")
+
+    def table_cliente(self):
+        self.tableView_estoque.setStyleSheet("QHeaderView{ color:white, font-size: 15px;}")
+        
+        db = QSqlDatabase("QSQLITE")
+        db.setDatabaseName("system.db")
+        db.open()
+
+        self.model = QSqlTableModel(db=db)
+        self.tableView_cliente.setModel(self.model)
+        self.model.setTable("cliente")
+        self.model.select()
+
 
     def table_estoque(self):
       self.tw_estoque.setStyleSheet("QHeaderView{ color:white, font-size: 15px;}")
